@@ -1,0 +1,60 @@
+/* CARD FORM */
+.header-right{
+	background:#F8D700;
+	padding:40px;
+	border-radius:12px;
+	box-shadow:0 15px 40px rgba(0,0,0,0.15);
+	border-top:5px solid #F8D700;
+	transition:all 0.3s ease;
+}
+
+/* INPUT */
+.form-control{
+	border-radius:8px;
+	padding:14px;
+	border:1px solid #ddd;
+	transition:all 0.3s ease;
+}
+
+/* INPUT FOCUS */
+.form-control:focus{
+	border-color:#F8D700;
+	box-shadow:0 0 0 0.15rem rgba(248,215,0,0.3);
+}
+
+/* TITLE */
+.header-right h3{
+	font-weight:700;
+	color:#111;
+}
+
+/* BANNER TITLE */
+.banner-content h1{
+	font-size:50px;
+	font-weight:800;
+	color:#F8D700;
+}
+
+/* BUTTON */
+.btn-warning{
+	background:#F8D700;
+	border:none;
+	color:#000;
+	font-weight:600;
+	border-radius:8px;
+	padding:14px;
+	transition:all 0.3s ease;
+}
+
+/* BUTTON HOVER */
+.btn-warning:hover{
+	background:#000;
+	color:#F8D700;
+	transform:translateY(-2px);
+	box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* TEXT AREA */
+textarea{
+	resize:none;
+}

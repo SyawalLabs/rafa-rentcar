@@ -1,0 +1,376 @@
+<?php
+header('Content-Type: text/html; charset=UTF-8');
+?>
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="colorlib">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Rafa RentCar</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<!--
+			CSS
+			============================================= -->
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+	<header id="header">
+		<div class="header-top">
+		</div>
+		<div class="container main-menu">
+			<div class="row align-items-center justify-content-between d-flex">
+				<h3 class="text-white" href="index.html">Rafa RentCar</h3>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<li class="menu-active"><a href="#beranda">Beranda</a></li>
+						<li><a href="#tentang">Tentang</a></li>
+						<li><a href="#layanan">Layanan</a></li>
+						<li><a href="#galeri">Galeri</a></li>
+					</ul>
+				</nav><!-- #nav-menu-container -->
+			</div>
+		</div>
+	</header><!-- #header -->
+
+	<!-- start banner Area -->
+	<section class="banner-area relative" id="beranda">
+		<div class="overlay overlay-bg"></div>
+		<div class="container">
+			<div class="row fullscreen align-items-center">
+				<!-- LEFT TEXT -->
+				<div class="col-lg-6 col-md-12 banner-content">
+					<h6 class="text-white">Butuh tumpangan? Telepon saja</h6>
+					<h1 class="text-uppercase text-white">
+						Rafa RentCar
+					</h1>
+					<p class="pt-3 pb-4 text-white">
+						Baik Anda menikmati liburan singkat di kota atau liburan panjang di bawah sinar matahari,
+						Anda selalu dapat meningkatkan pengalaman perjalanan Anda dengan menginap di tempat yang kecil.
+					</p>
+					<a href="#" class="primary-btn text-uppercase">
+						Selengkapnya
+					</a>
+				</div>
+
+				<!-- BOOKING FORM -->
+				<div class="col-lg-6 col-md-12">
+					<div class="header-right">
+						<h3 class="text-center mb-4">
+							Pesan Taksi Anda Secara Online
+						</h3>
+						<form action="mail.php" method="POST">
+							<div class="row">
+
+								<div class="col-md-6 mb-3">
+									<input class="form-control form-control-lg text-white"
+										type="text"
+										name="name"
+										placeholder="Nama Pemesan"
+										required>
+								</div>
+
+								<div class="col-md-6 mb-3">
+									<input class="form-control form-control-lg text-white"
+										type="email"
+										name="email"
+										placeholder="Alamat Email"
+										required>
+								</div>
+
+								<div class="col-md-6 mb-3">
+									<input class="form-control form-control-lg text-white"
+										type="tel"
+										name="phone"
+										placeholder="Nomor Telepon"
+										required>
+								</div>
+
+								<!-- Jumlah Penumpang -->
+								<div class="col-md-6 mb-3">
+									<input class="form-control form-control-lg text-white"
+										type="number"
+										name="passengers"
+										placeholder="Jumlah Penumpang"
+										min="1"
+										required>
+								</div>
+
+								<div class="col-md-6 mb-3">
+									<input class="form-control form-control-lg text-white"
+										type="text"
+										name="from_destination"
+										placeholder="Contoh: Rumah, Riung"
+										required>
+								</div>
+
+								<div class="col-md-6 mb-3">
+									<input class="form-control form-control-lg text-white"
+										type="text"
+										name="to_destination"
+										placeholder="Contoh: Pelabuhan, Riung"
+										required>
+								</div>
+
+								<div class="col-md-6 mb-3">
+									<input class="form-control form-control-lg text-white"
+										type="datetime-local"
+										name="date_time"
+										required>
+								</div>
+
+								<div class="col-12 mb-3">
+									<textarea class="form-control form-control-lg text-white"
+										name="message"
+										rows="3"
+										placeholder="Pesan Tambahan"></textarea>
+								</div>
+
+								<div class="col-12">
+									<button class="btn btn-warning btn-lg w-100 text-uppercase">
+										Buat Pesanan
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End banner Area -->
+
+	<!-- Start home-about Area -->
+	<section class="home-about-area section-gap" id="tentang">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6 about-left">
+					<img class="img-fluid" src="img/about-img.jpg" alt="">
+				</div>
+				<div class="col-lg-6 about-right">
+					<h1>Perjalanan Nyaman
+						dengan Taksi Lokal Terpercaya</h1>
+					<h4>Kami di sini untuk mendengarkan Anda dan memberikan yang terbaik.</h4>
+					<p>Nikmati perjalanan nyaman dan aman dengan taksi lokal terpercaya kami. Layanan cepat dan profesional siap mengantar Anda ke tujuan, kapan pun dan di mana pun. Pilihan tepat untuk mobilitas sehari-hari di kota Anda.
+					</p>
+					<a class="text-uppercase primary-btn" href="#">Selengkapnya</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End home-about Area -->
+
+	<!-- Start services Area -->
+	<section class="services-area pb-120" id="layanan">
+		<div class="container">
+			<div class="row section-title">
+				<h1>Layanan yang kami tawarkan</h1>
+				<p>Aman & Terpercaya.</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 single-service">
+					<span class="lnr lnr-car"></span>
+					<a href="#">
+						<h4>Taksi Reguler</h4>
+					</a>
+					<p>
+						Antar-jemput sehari-hari antar kota.
+					</p>
+				</div>
+				<div class="col-lg-4 single-service">
+					<span class="lnr lnr-briefcase"></span>
+					<a href="#">
+						<h4>Taksi Bandara</h4>
+					</a>
+					<p>
+						Cepat dan nyaman menuju atau dari bandara.
+					</p>
+				</div>
+				<div class="col-lg-4 single-service">
+					<span class="lnr lnr-bus"></span>
+					<a href="#">
+						<h4>Taksi Wisata</h4>
+					</a>
+					<p>
+						Mengantar turis atau perjalanan singkat di kota.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End services Area -->
+
+	<!-- Start image-gallery Area -->
+	<section class="image-gallery-area section-gap" id="galeri">
+		<div class="container">
+			<div class="row section-title">
+				<h1>Galeri Gambar yang ingin kami bagikan</h1>
+				<p>Mereka yang sangat mencintai sistem ramah lingkungan.</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 single-gallery">
+					<a href="img/g1.jpg" class="img-gal"><img class="img-fluid" src="img/g1.jpg" alt=""></a>
+					<a href="img/g4.jpg" class="img-gal"><img class="img-fluid" src="img/g4.jpg" alt=""></a>
+				</div>
+				<div class="col-lg-4 single-gallery">
+					<a href="img/g2.jpg" class="img-gal"><img class="img-fluid" src="img/g2.jpg" alt=""></a>
+					<a href="img/g5.jpg" class="img-gal"><img class="img-fluid" src="img/g5.jpg" alt=""></a>
+				</div>
+				<div class="col-lg-4 single-gallery">
+					<a href="img/g3.jpg" class="img-gal"><img class="img-fluid" src="img/g3.jpg" alt=""></a>
+					<a href="img/g6.jpg" class="img-gal"><img class="img-fluid" src="img/g6.jpg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End image-gallery Area -->
+
+	<!-- Start home-calltoaction Area -->
+	<section class="home-calltoaction-area relative">
+		<div class="container">
+			<div class="overlay overlay-bg"></div>
+			<div class="row align-items-center section-gap">
+				<div class="col-lg-8">
+					<h1>Fast & Friendly Taxi Service</h1>
+					<p>
+						Perjalanan Anda lebih mudah dengan taksi lokal kami. Sopir berpengalaman dan mobil terawat siap mengantar ke mana saja di kota Anda.
+					</p>
+				</div>
+				<div class="col-lg-4 btn-left">
+					<a href="#beranda" class="primary-btn">Pesan Sekarang</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End home-calltoaction Area -->
+
+	<!-- start footer Area -->
+	<footer class="footer-area section-gap">
+		<div class="container">
+			<div class="row">
+				<!-- Quick Links -->
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h6>Quick Links</h6>
+						<ul>
+							<li><a href="#">Beranda</a></li>
+							<li><a href="#">Tentang Kami</a></li>
+							<li><a href="#">Layanan</a></li>
+							<li><a href="#">Galeri</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Services -->
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h6>Layanan</h6>
+						<ul>
+							<li><a href="#">Taksi Reguler</a></li>
+							<li><a href="#">Taksi Bandara</a></li>
+							<li><a href="#">Taksi Wisata</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Follow Us -->
+				<div class="col-lg-3 col-md-6 col-sm-6 social-widget">
+					<div class="single-footer-widget">
+						<h6>Follow Us</h6>
+						<p>Terhubung dengan kami</p>
+						<div class="footer-social d-flex align-items-center">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a href="#"><i class="fa fa-whatsapp"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Maps -->
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h6>Lokasi Kami</h6>
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.297541474971!2d121.02816407428975!3d-8.425823791613377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2db2513c4d9832a7%3A0x9f4bf5fdadeadc5!2sRafa%20Rent%20Car%20Riung-Flores!5e1!3m2!1sid!2sid!4v1773299139005!5m2!1sid!2sid"
+							width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+
+				<!-- Footer Text -->
+				<p class="mt-80 mx-auto footer-text col-lg-12 text-center">
+					&copy; <script>
+						document.write(new Date().getFullYear());
+					</script> All rights reserved | <a href="https://jasa-syawallabs.vercel.app/" target="_blank">SyawalLabs</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+	<!-- End footer Area -->
+
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="js/easing.min.js"></script>
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+	<script>
+		const urlParams = new URLSearchParams(window.location.search);
+
+		if (urlParams.get('status') === 'success') {
+
+			const waLink = urlParams.get('wa');
+
+			Swal.fire({
+				icon: 'success',
+				title: 'Pemesanan Berhasil!',
+				text: 'Pesanan taxi berhasil dikirim.',
+				showCancelButton: true,
+				confirmButtonText: 'Kirim ke WhatsApp',
+				cancelButtonText: 'Tutup',
+				confirmButtonColor: '#F8D700'
+			}).then((result) => {
+
+				if (result.isConfirmed) {
+					window.open(waLink, '_blank');
+				}
+
+			});
+
+		}
+	</script>
+</body>
+
+</html>
